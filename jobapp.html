@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Application</title>
+    <title>Student Job Application</title>
 </head>
 <body bgcolor="antiquewhite">
     <center>
         <h1><u>Student Job Application</u></h1>
         <form enctype="multipart/form-data">
-            <h3>Personal Details :</h3>
             <table border="2" cellpadding="10">
+                <tr><th colspan="2"><h3>Personal Details</h3></th></tr>
                 <tr>
                     <td><b>Name:</b></td>
                     <td>
@@ -21,7 +21,7 @@
                 </tr>
                 <tr>
                     <td><b>Email:</b></td>
-                    <td><input type="email" style="width: 300px; height: 30px;" placeholder="Enter your email"></td>
+                    <td><input type="email" style="width: 300px;" placeholder="Enter your email"></td>
                 </tr>
                 <tr>
                     <td><b>Date of Birth:</b></td>
@@ -29,11 +29,11 @@
                 </tr>
                 <tr>
                     <td><b>Address:</b></td>
-                    <td><input type="text" style="width: 300px; height: 30px;" placeholder="Enter your address"></td>
+                    <td><input type="text" style="width: 300px;" placeholder="Enter your address"></td>
                 </tr>
                 <tr>
                     <td><b>Mobile:</b></td>
-                    <td><input type="number" style="width: 300px; height: 30px;" placeholder="Enter mobile number"></td>
+                    <td><input type="number" style="width: 300px;" placeholder="Enter mobile number"></td>
                 </tr>
                 <tr>
                     <td><b>Gender:</b></td>
@@ -53,41 +53,43 @@
                     <td><b>Upload Photo:</b></td>
                     <td><input type="file" accept="image/*"></td>
                 </tr>
-            </table>
+                <tr><th colspan="2"><h3>Education Details</h3></th></tr>
 
-            <h3>Education Details :</h3>
-            <table border="2" cellpadding="10">
                 <tr>
-                    <th>Qualification</th>
-                    <th>Institution</th>
-                    <th>Board/University</th>
-                    <th>Year of Passing</th>
-                    <th>Percentage/CGPA</th>
+                    <td><b>10th Details:</b></td>
+                    <td>
+                        School: <input type="text" placeholder="School Name"><br><br>
+                        Board: <input type="text" placeholder="Board"><br><br>
+                        Year: <input type="text" placeholder="Year"><br><br>
+                        Marks: <input type="text" placeholder="Percentage/CGPA">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>12th Details:</b></td>
+                    <td>
+                        College: <input type="text" placeholder="College Name"><br><br>
+                        Board: <input type="text" placeholder="Board"><br><br>
+                        Year: <input type="text" placeholder="Year"><br><br>
+                        Marks: <input type="text" placeholder="Percentage/CGPA">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>Graduation Details:</b></td>
+                    <td>
+                        University: <input type="text" placeholder="University Name"><br><br>
+                        Degree: <input type="text" placeholder="Course Name"><br><br>
+                        Year: <input type="text" placeholder="Year"><br><br>
+                        Marks: <input type="text" placeholder="CGPA/Percentage">
+                    </td>
                 </tr>
                 <tr>
-                    <td>10th</td>
-                    <td><input type="text" placeholder="School Name"></td>
-                    <td><input type="text" placeholder="Board Name"></td>
-                    <td><input type="text" placeholder="Year"></td>
-                    <td><input type="text" placeholder="Percentage/CGPA"></td>
-                </tr>
-                <tr>
-                    <td>12th</td>
-                    <td><input type="text" placeholder="College Name"></td>
-                    <td><input type="text" placeholder="Board Name"></td>
-                    <td><input type="text" placeholder="Year"></td>
-                    <td><input type="text" placeholder="Percentage/CGPA"></td>
-                </tr>
-                <tr>
-                    <td>Graduation</td>
-                    <td><input type="text" placeholder="College/University Name"></td>
-                    <td><input type="text" placeholder="University Name"></td>
-                    <td><input type="text" placeholder="Year"></td>
-                    <td><input type="text" placeholder="CGPA/Percentage"></td>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit Application">
+                    </td>
                 </tr>
             </table>
-            <br>
-            <input type="submit" value="Submit Application">
         </form>
     </center>
 </body>
